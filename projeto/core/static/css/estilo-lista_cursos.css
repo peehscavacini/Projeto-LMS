@@ -1,0 +1,106 @@
+/* CONFIGURAÇÃO DE TEXTO E PARÁGRAFOS*/
+
+
+.topicos{
+	float:center;
+	text-align:center;
+	margin-top:180px;
+	font-family:monospace;
+	font-size:22px;
+	color:#FFFFFF
+}
+p.texto{
+	text-align:justify;
+	text-indent:30px;
+	font-family:monospace;
+	font-size:15px;
+	color:#FFFFFF
+}
+p.texto2{
+	font-family:monospace;
+	font-size:15px;
+	color:#FFFFFF
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+	font-family:Fixedsys;
+	font-family:monospace;
+	font-size:25px;
+	color:#FFFFFF;
+}
+/* CONFIGURAÇÃO IMAGEM DOS BALÕES*/
+
+.balao{
+	width:30px;
+}
+/* CONFIGURAÇÃO DAS IMAGENS DE PROPAGANDA*/
+
+img.propaganda{
+width:100%;
+height:auto;
+}
+
+/* CONFIGURAÇÃO DA PAGINA LISTAS DE CURSOS*/
+
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border box ;
+	-moz-box-sizing:border box ;
+	box-sizing:border box ; 
+}
+
+.contenedor{
+	max-width:1000px;
+	width:90%;
+	margin:auto;
+}
+
+header{
+	margin:40px 0;
+	font-size:20px;
+	text-align:center;
+}
+
+.galeria .contenedor{
+	display:flex;
+	flex-direction:wrap;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	
+}
+.foto{
+	width:22%;
+	margin-bottom:30px;
+	outline:5px solid rgba(0,0,0,0);
+	-webkit-box-shadow: 4px, 4px, 6px rgba(0,0,0,.8) ;
+	-moz-box-shadow: 4px, 4px, 6px rgba (0,0,0,.8) ;
+	-ms-box-shadow: 4px, 4px, 6px rgba (0,0,0,.8) ;
+	-o-box-shadow: 4px, 4px, 6px rgba (0,0,0,.8) ;
+	box-shadow: 4px, 4px, 6px rgba (0,0,0,.8) ;
+	-webkit-transition: all .3 ease;
+	-o-transition: all .3 ease;
+	transition: all .3 ease;
+	border-right:10px;
+
+}
+.foto img{
+	width: 100%;
+	vertical-align:top;
+	cursor:pointer;
+	
+}
+.foto:hover{
+	outline: 5px solid #43c5cc;
+}
+
+@media(max-width:768px){
+.galeria .contenedor{
+		flex-direction: column;
+	}
+.foto{
+	width: 60%;
+	margin:auto;
+	margin-bottom:30px;
+}

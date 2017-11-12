@@ -1,0 +1,154 @@
+/*CONFIGURAÇÃO DO CORPO DA PAGINA*/
+.body{
+margin: 0;
+font-family: monospace;
+font-size: 20px;
+background-color:#000000;
+
+	
+}
+/*CONFIGURAÇÃO MENU*/
+#btn-menu{
+	display:none;
+}
+
+.header{
+	font-weight:600;
+}
+
+.header label{
+	color:#efefef;
+	font-size:25px;
+	display:block;
+	padding:15px 30px;
+	width:20px;
+	display:none;
+}
+
+
+.menu ul{
+	
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	justify-content:center;	
+	transition: all .5s;
+}
+
+.menu li a{
+	color:#efefef;
+	text-decoration:none;
+	padding: 15px 20px;
+	display: block;
+	border-right: 1px solid #efefef;
+}
+
+.menu li a:hover{
+	background-color:#ff5900;
+}
+
+/*CONFIGURAÇÃO MENU PARA FICAR RESPONSIVO E APARECER O BOTÃO*/
+
+@media(max-width:768px){
+	.imagem{
+		margin-left:100px;
+	}
+	
+	.header label {
+		display:block;
+	}
+	
+	.menu ul{
+		position:absolute;
+		background-color:#2f2f2f;
+		width:100%;
+		flex-direction:column;
+		margin-left: -100%;
+	}
+	
+	.menu li a{
+		border-top: 1px solid #efefef;
+	}
+	
+	#btn-menu:checked ~ .menu ul{
+		margin-left:0;
+		
+	}
+		
+	.logo{
+		width:100%;
+	}
+
+	}
+	
+/*CONFIGURAÇÃO DO LOGO PARA FICAR RESPONSIVO*/
+
+@media (min-width: 768px) {
+    .logo {
+        width:300px;
+        height:auto;
+		padding:0;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width:300px;
+        height:auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width:300px;
+        height:auto;
+		float:center;
+    }
+}
+
+
+/*CONFIGURAÇÃO DE TEXTOS*/
+
+
+h1, h3, h4, h5, h6{
+	text-align:center;
+	font-family:Fixedsys;
+	font-family:monospace;
+	font-size:25px;
+	color:#FFFFFF;
+}
+
+/* CONFIGURAÇÃO DOS TITULOS DA PAGINA RESPONSIVO*/
+
+
+header.titulo {
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -ms-max-content;
+    width: max-content;
+    margin-bottom: 2em;
+}
+
+/* CONFIGURAÇÃO DOS QUADROS DA PAGINA RESPONSIVO*/
+
+
+.quadro {
+    font-size: 10px;    
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
+
+/* CONFIGURAÇÃO DO RODAPÉ*/
+
+
+.footer{
+	text-align:center;
+	font-family:monospace;
+	font-size:15px;
+	color:#000000;
+	background-color:#43c5cc;
+}
+/************************************************************************************************************/
