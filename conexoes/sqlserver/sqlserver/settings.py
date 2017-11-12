@@ -73,20 +73,7 @@ WSGI_APPLICATION = 'sqlserver.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'FACULDADE',
-        'USER': 'usuario',
-        'PASSWORD': 'toviradumsm1',
-        'HOST': 'DESKTOP-ADU0EEG\TESTECONFIG',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'SQL Server',
-            }
-        
-    }
-}
+
 
 
 # Password validation
