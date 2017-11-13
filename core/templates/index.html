@@ -3,7 +3,7 @@
 		<head>
 
 			<title>
-				{{title}}
+				Faculdade Inovação Tecnologia
 			</title>
 
 			<meta name="author" content="Bruno Tomas- 1700548">
@@ -17,14 +17,34 @@
 
 			<meta name="viewport" content="width-device-width, initial-scale=1">
 
-			<link rel="shortcut icon" href="static\imagens\favicon.ico" >
+			<link rel="shortcut icon" href="imagens\favicon.ico" >
 
-			<link rel="stylesheet" type="text/css" href="static\css\estilo.css">
-			<link rel="stylesheet" type="text/css" href="static\css\estilo-index.css">
+			<link rel="stylesheet" type="text/css" href="css\estilo.css">
+			<link rel="stylesheet" type="text/css" href="css\estilo-index.css">
 
 		</head>
-
-
+		<!--
+			Correção EP2 HTML: 9,0
+			- Suas páginas não possuem o H1, mas usam o H2 para frente (-1,0)
+		-->
+		<!--
+			Correção EP3 CSS: 8,0
+			- Uso de estilo por id (botão de menu) (-1,0)
+			- Header da página precisa de um estilo diferente do body (-0,5)
+			- Alguns links ficaram sem estilo próprio 
+			- A escolha da cor preta de fundo faz com que certos elementos não sejam possíveis de ver (os balões de comentário por exemplo) (-0,5)
+		-->
+		<!--
+			Correção EP4 Layout: 9,0
+			- Telas intermediárias ficam com o menu distorcido (tentem 790px mais ou menos) (-0,5)
+			- O menu demora para esconder e as vezes ele para em um estado intermediário. (-0,5)
+		-->
+		<!--
+			Correção EP5 Forms: 8,5
+			- Mesmo que você deixe o texto no placeholder, é necessário manter os labels (pode ser escondidos) por questão da acessibilidade (-0,5)
+			- Atributos name com espaços em alguns casos (-0,5)
+			- Falta o atributo name em alguns casos (-0,5)
+		-->
 		<body class="body">
 
 			<div class="quadro">
@@ -34,6 +54,7 @@
 			</div>
 
 			<article>
+				<!-- Se isso é o cabeçalho de uma página, ela deveria estar direto no BODY, da maneira que está parece que é o cabeçalho de um artigo específico.-->
   				<header class="header">
 					<input type="checkbox" id="btn-menu">
 
@@ -79,6 +100,7 @@
 
 			<div class="quadro">
 				<header class="titulo">
+					<!-- Cade o H1? -->
 					<h2>
 						A Instituição
 					</h2>
