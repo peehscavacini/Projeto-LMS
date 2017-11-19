@@ -1,13 +1,13 @@
-/*CONFIGURA√á√ÉO DO CORPO DA PAGINA*/
+/*CONFIGURA«√O DO CORPO DA PAGINA*/
 .body{
 margin: 0;
 font-family: monospace;
-font-size: 20px;
+font-size: 15px;
 background-color:#000000;
 
 	
 }
-/*CONFIGURA√á√ÉO MENU*/
+/*CONFIGURA«√O MENU*/
 #btn-menu{
 	display:none;
 }
@@ -27,8 +27,8 @@ background-color:#000000;
 
 
 .menu ul{
-	
-	list-style:none;
+	list-style-type: none;
+	display: none;
 	margin:0;
 	padding:0;
 	display:flex;
@@ -37,7 +37,7 @@ background-color:#000000;
 }
 
 .menu li a{
-	color:#efefef;
+       	color:#efefef;
 	text-decoration:none;
 	padding: 15px 20px;
 	display: block;
@@ -48,7 +48,7 @@ background-color:#000000;
 	background-color:#ff5900;
 }
 
-/*CONFIGURA√á√ÉO MENU PARA FICAR RESPONSIVO E APARECER O BOT√ÉO*/
+/*CONFIGURA«√O MENU PARA FICAR RESPONSIVO E APARECER O BOT√O*/
 
 @media(max-width:768px){
 	.imagem{
@@ -82,7 +82,7 @@ background-color:#000000;
 
 	}
 	
-/*CONFIGURA√á√ÉO DO LOGO PARA FICAR RESPONSIVO*/
+/*CONFIGURA«√O DO LOGO PARA FICAR RESPONSIVO*/
 
 @media (min-width: 768px) {
     .logo {
@@ -108,7 +108,7 @@ background-color:#000000;
 }
 
 
-/*CONFIGURA√á√ÉO DE TEXTOS*/
+/*CONFIGURA«√O DE TEXTOS*/
 
 
 h1, h3, h4, h5, h6{
@@ -119,7 +119,7 @@ h1, h3, h4, h5, h6{
 	color:#FFFFFF;
 }
 
-/* CONFIGURA√á√ÉO DOS TITULOS DA PAGINA RESPONSIVO*/
+/* CONFIGURA«√O DOS TITULOS DA PAGINA RESPONSIVO*/
 
 
 header.titulo {
@@ -130,10 +130,11 @@ header.titulo {
     margin-bottom: 2em;
 }
 
-/* CONFIGURA√á√ÉO DOS QUADROS DA PAGINA RESPONSIVO*/
+/* CONFIGURA«√O DOS QUADROS DA PAGINA RESPONSIVO*/
 
 
 .quadro {
+	
     font-size: 10px;    
     padding: 2em 0 2em 0;
     margin: 0 auto;
@@ -141,7 +142,7 @@ header.titulo {
     width: calc(100% - 6em);
 }
 
-/* CONFIGURA√á√ÉO DO RODAP√â*/
+/* CONFIGURA«√O DO RODAP…*/
 
 
 .footer{
