@@ -1,24 +1,33 @@
 from django.shortcuts import render
 
+from core.models import Curso, Aluno
+from core.forms import ContatoForm, CursoForm
 
 # Create your views here.
 
 def index(request):
-    contexto = {
-        "usuario":None,
-        "perfil":"aluno",
-        "cursos":[
-            {"nome":"Desenvolvimento de Sistemas", "tipo":"Graduação"},
-            {"nome":"Banco de Dados", "tipo":"Graduação"},
-            {"nome":"Sistemas de Informação", "tipo":"Graduação"},
-            {"nome":"Internet das Coisas", "tipo":"Pós Graduação"}
-        ]
-    }
-    
-    return render(request,"index.html", contexto)
+    return render(request,"index.html")
 
 def contato(request):
-    return render(request,"contato.html")
+    if request.POST:
+        form = ContatoForm(request.POST)
+        if form.is_valid():
+            form.envia_email()
+    else:
+        form = ContatoForm()
+
+    contexto = {
+        "form":form
+    }
+    return render(request,"contato.html",contexto)
+
+
+def curso(request):
+    contexto= {
+        "form":form
+    }
+    return render(request,"curso.html", contexto)
+
 
 def lista_cursos(request):
     return render(request,"lista_cursos.html")
@@ -40,14 +49,10 @@ def detalhe_curso(request):
 
 def interface(request):
     contexto = {
-        "usuario":None,
+        "usuario":Aluno.objects.all(),
+        "ra":Aluno.objects.all(),
         "perfil":"aluno",
-        "cursos":[
-            {"nome":"Desenvolvimento de Sistemas", "tipo":"Graduação"},
-            {"nome":"Banco de Dados", "tipo":"Graduação"},
-            {"nome":"Sistemas de Informação", "tipo":"Graduação"},
-            {"nome":"Internet das Coisas", "tipo":"Pós Graduação"}
-        ]
+        "cursos": Curso.objects.all(),
     }
     return render(request,"interface.html", contexto)
 

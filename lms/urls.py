@@ -17,7 +17,8 @@ from django.conf.urls import url
 from django.contrib import admin
 
 
-from core.views import index, contato, lista_cursos, noticias, cadastro, novadisciplina, login, detalhe_curso, interface, disciplinasnovo, PaginaAluno, smartclass, TabelaNotasFaltas
+
+from core.views import index, contato, lista_cursos, noticias, cadastro, novadisciplina, login, detalhe_curso, interface, disciplinasnovo, PaginaAluno, smartclass, TabelaNotasFaltas, curso
 
 
 
@@ -37,7 +38,11 @@ urlpatterns = [
     url(r'^PaginaAluno/', PaginaAluno),
     url(r'^smartclass/', smartclass),
     url(r'^TabelaNotasFaltas/', TabelaNotasFaltas),
+    url(r'^curso/', curso),
+
 
 
 
 ]
+
+

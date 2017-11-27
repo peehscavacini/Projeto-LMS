@@ -24,26 +24,27 @@
 
 				<ul>
 					{%for curso in cursos %}
-						<li>{{ curso.nome }} - {{ curso.tipo }}</li>
+			
+							<li>{{ curso.nome }} - {{ curso.tipo }}</li>
+						
 					{% endfor %}
 				
 				
-				
 				</ul>
-		</div>
-		<div class="container-recados2">
-				{% if perfil == "aluno" %}
-				<p>Conteúdo para Alunos</p>
-		
-				{% elif perfil == "professor" %}		
-				<p>Conteúdo para Professores</p>
+				</div>
+			<div class="container-recados2">
+						{% if perfil == "aluno" %}
+						<p>Conteúdo para Alunos</p>
 				
-				{% else %}
-				<p>Conteúdo para Coordenadores</p>
-				{% endif %}	
-		</div>
-		</div>
-		</div>
-		
+						{% elif perfil == "professor" %}		
+						<p>Conteúdo para Professores</p>
+						
+						{% else %}
+						<p>Conteúdo para Coordenadores</p>
+					{% endif %}		
+				</ul>
+			</div>
+			</div>
+			</div>
 		
 		{%  endblock %}

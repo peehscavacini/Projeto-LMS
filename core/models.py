@@ -142,6 +142,17 @@ class Aluno(Usuario):
     def __str__(self):
         return self.nome
 
+class Questao(models.Model):
+
+    curso = models.ForeignKey(Curso)
+    numero = models.IntegerField("Número")
+    entrega = models.DateField("Entrega")
+
+    arquivo = models.FileField(upload_to="arquivos/")
+
+    def __str__(self):
+        return "{}".format(self.numero)
+
 
 class Matricula(models.Model):
     ra_aluno = models.ForeignKey(

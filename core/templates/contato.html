@@ -7,25 +7,23 @@
         
 <div class="containercontato">
 <img src="/static/img/iconemenu.png" alt="icone menu">
-<form method="post">
+<form method="POST"action="">
+
+ 
 <div class="form-input">
-<input type="text" placeholder="Nome Completo*" name="Nome">
+        {{ form.errors }}
+
+        
+        {% csrf_token %}
+<input type="text" placeholder="Nome Completo*" name="nome">
 </div>
 <div class="form-input">
-<input type="email" placeholder="Email*" name="Email">
+<input type="email" placeholder="Email*" name="email">
 </div>
-<label for="select_assunto"></label><!-- Label vazio? -->
-<select name="assuntos">
-<option value="sem assunto" selected>Selecione um assunto</option> 
-<option value="Secretaria">Secretaria</option>
-<option value="Financeiro">Financeiro</option>
-<option value="Suporte">Suporte</option>
-<option value="Professor">Professor</option>
-</select><br/>
-<textarea>
+<textarea name ="mensagem">
     Assunto:
     </textarea><br/>
-<input type="submit" name="submit" value="Enviar" class="btn-login"><br/>
+    <input type="submit" name="submit" value="Enviar" class="btn-login"><br/>
 </form>
 </div>
 
