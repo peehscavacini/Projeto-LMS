@@ -1,0 +1,28 @@
+﻿{% extends 'base2.html' %}
+
+	{% block titulo %} Faculdade Inovação Tecnologia - LMS {% endblock %}
+
+	{% block main %}
+		<link rel="stylesheet" type="text/css" href="/static/EstiloSmartclass.css">
+
+
+<div>
+<form class="forms">
+
+  Disciplinas:
+  
+<select name="disciplinas">
+  <option value="Seleciona disciplina" selected="selected">Selecione a disciplina</option>
+  <option value="gestao" >Gestão de Projetos</option>
+  <option value="linguagem">Linguagem de Programação II</option>
+  <option value="sql" >Linguagem SQL</option>
+  <option value="engenharia">Engenharia de Software</option>
+  <option value="tecweb">Tecnologia Web</option>
+  <option value="libras">Libras</option>
+  <option value="devops">Ambiente de Desenvolvimento e Operação</option>
+ 
+</select>
+
+  <button type="button" class="pesquisa">Pesquisar</button>
+
+  {%  endblock %}

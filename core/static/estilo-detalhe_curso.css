@@ -1,0 +1,55 @@
+.topicos{
+	float:center;
+	text-align:center;
+	margin-top:180px;
+	font-family:monospace;
+	font-size:22px;
+	color:#FFFFFF
+}
+.texto{
+	text-align:justify;
+	text-indent:30px;
+	font-family:monospace;
+	font-size:15px;
+	color:#FFFFFF
+}
+p.texto2{
+	font-family:monospace;
+	font-size:15px;
+	color:#FFFFFF
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+	font-family:Fixedsys;
+	font-family:monospace;
+	font-size:25px;
+	color:#FFFFFF;
+}
+
+.balao{
+	width:30px;
+}
+
+img.propaganda{
+width:100%;
+height:auto;
+}
+
+
+
+.titulo{
+	text-align:justify;
+	text-indent:30px;
+	font-family:monospace;
+	font-size:20px;
+	color:#FFFFFF
+}
+
+.separacao{
+	text-align:center;
+	font-family:monospace;
+	font-size:25px;
+	color:#FFFFFF;
+	background-color:#191970;
+}

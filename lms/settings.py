@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'lms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'FACULDADE',
-        'USER': 'usuario',
-        'PASSWORD': 'toviradumsm1',
-        'HOST': 'DESKTOP-ADU0EEG\TESTECONFIG',
+        'NAME': 'LMS_FACULDADE',
+        'USER': 'nayara',
+        'PASSWORD': 'teste123',
+        'HOST': 'WILLIAN\TESTE',
         'PORT': '',
         'OPTIONS': {
             'driver': 'SQL Server',

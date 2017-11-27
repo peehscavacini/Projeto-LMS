@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+	{% block titulo %} Nova Disciplina - LMS {% endblock %}
+
+	    {% block main %}
+<link rel="stylesheet" type="text/css" href="/static/cadastro.css">
+
+
+			
+<div class="containerdisciplina">
+<form method="post">
+<div class="group">
+<input type="text" placeholder=" Professor Responsável*" name="Professor">
+<input type="number" placeholder=" Horas mensais*" name="Horas">
+<input type="text" placeholder=" Duração da aula" name="Dura_aula">
+<select name="dias_semana">
+	<option value="Selecione_semana" selected="selected">Dia Semana que terá aula</option>
+	<option value="Seg">Segunda- Feira</option>
+	<option value="Ter">Terça- Feira</option>
+	<option value="Qua">Quarta- Feira</option>
+	<option value="Qui">Quinta- Feira</option>
+	<option value="Sex">Sexta- Feira</option>
+	<option value="Sab">Sábado</option>
+</select><br/>
+</div>
+<div class="group">
+<textarea name="conteudo">
+   Conteúdo Resumido:
+    </textarea><br/>
+	</div>
+<input type="submit" name="submit" value="Enviar" class="btn-disciplina"><br/>
+</form>
+</div>
+
+		{% endblock %}

@@ -1,0 +1,190 @@
+.body{
+	margin:0 auto; 
+}
+.container{
+	margin: auto;
+	width:500px;
+	height:350px;
+	text-align:center;
+	background-color:#FF4500;
+	border-radius: 4px;
+	padding:30px;
+	margin: 0 auto;
+	margin-top:150px;
+	margin-bottom:250px;
+
+
+}
+
+.container img{
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom: 30px;
+	
+}
+.containercontato{
+	margin: auto;
+	width:500px;
+	height:500px;
+	text-align:center;
+	background-color:#FF4500;
+	border-radius: 4px;
+	padding:30px;
+	margin: 0 auto;
+	margin-top:150px;
+	margin-bottom:250px;
+
+
+}
+
+.containercontato img{
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom: 30px;
+	
+}
+input[type="text"],input[type="password"], input[type="email"]{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom:20px;
+	background-color:#fff;
+	padding-left:10px;
+		
+}
+select{
+    height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom:20px;
+	background-color:#fff;
+	padding-left:10px;
+		  
+}
+
+textarea{
+    height:150px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom:20px;
+	background-color:#fff;
+	padding-left:10px;
+		  
+}
+
+.form-input::before{
+	position:absolute;
+	font-family:"FontAwesone";
+	font-size:30px;
+}
+
+.btn-login{
+	padding: 15px 30px;
+	color: #fff;
+	border-radius: 6px;
+	border:none;
+	background-color:#000000;
+	border-bottom: 4px solid #111111;
+	margin-bottom: 20px;
+	cursor:pointer;
+	
+}
+a{
+	color:#fff;   
+}
+.checksenha{
+	color:#fff;
+}
+
+@media (max-width:768px){
+	.container{
+		width:80%;
+	}
+	.container img{
+	width:30%;
+	}
+	input[type="text"],input[type="password"], input[type="email"]{
+		width:80%;
+        font-size: 13px;
+	}
+    select{
+        width: 80%;
+        font-size: 13px;
+        
+    }
+    textarea{
+        width: 80%;
+        font-size: 13px;
+    }
+	
+}
+
+@media (max-width:425px){
+	.container{
+		width:70%;
+		
+	}
+	.container img{
+	width:50%;
+}
+
+input[type="text"],input[type="password"], input[type="email"]{
+		width:70%;
+
+}
+    select{
+        width: 70%;
+        
+    }
+    textarea{
+        width: 70%;
+    }
+
+}
+
+@media (max-width:768px){
+	.containercontato{
+		width:80%;
+	}
+	.containercontato img{
+	width:30%;
+	}
+input[type="text"],input[type="password"], input[type="email"]{
+		width:80%;
+    font-size: 13px;
+	}
+    select{
+        width: 80%;
+        font-size: 13px;
+    }
+	textarea{
+        width: 80%;
+        font-size: 13px;
+    }
+	
+}
+
+@media (max-width:425px){
+	.containercontato{
+		width:70%;
+		
+	}
+	.containercontato img{
+	width:50%;
+}
+
+input[type="text"],input[type="password"], input[type="email"]{
+		width:70%;
+
+}
+select{
+        width: 70%;
+        
+    }
+    
+textarea{
+        width: 70%;
+    }
+}

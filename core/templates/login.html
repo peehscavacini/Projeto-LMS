@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+	{% block titulo %} Login - LMS {% endblock %}
+
+		{% block main %}
+		
+<link rel="stylesheet" type="text/css" href="/static/formlogin.css">
+
+<div class="container">
+	<img src="/static/img/iconemenu.png" alt="icone menu">
+	<form>
+	<div class="form-input">
+	<input type="text" method="post" placeholder="&#128272; Usuario" name="Usuario">
+	</div>
+	<div class="form-input">
+	<input type="password" method="post" placeholder="&#128272; Senha" name="Senha">
+	</div>
+	<!-- Prefira o uso de button -->
+	<input type="submit" name="submit" value="LOGIN" class="btn-login"><br/>
+	<div class="checksenha">
+	<input type="checkbox" >Mantenha-me conectado <br/> <!-- label??? -->
+	</div>
+	<a href="esquecisenha.html"> Esqueci minha senha</a>
+	</form>
+	</div>
+
+		{% endblock %}
