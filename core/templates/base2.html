@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE=HTML>
+<html>
+    <head>
+
+        <title>
+            Faculdade Inovação Tecnologia - LMS {% block titulo %}  {% endblock %}
+        </title>
+
+        <meta name="author" content="Bruno Tomas- 1700548">
+        <meta name="author" content="Henrique Saula- 1700084">
+        <meta name="author" content="Mariana Benevides- 1700549">
+        <meta name="author" content="Nayara de Paula- 1700239">
+        <meta name="author" content="Pedro Henrique- 1700552">
+        <meta name="author" content="Yasmin de Laia- 1700550">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="imagens\favicon.ico" >
+
+        <link rel="stylesheet" type="text/css" href="{% static 'stylelogado.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'logado.css' %}">
+        
+    </head>
+    <body class="body">
+            
+                    <div class="quadro">
+                    <div class ="imagem">
+                    <img src="https://github.com/peehscavacini/TecWeb-TF-2B/blob/81755656e9b2e143736f9e4bc7201e549f8fe3e1/logo.png?raw=true" alt="logo" class="logo">
+                    </div>
+                    </div>
+            
+                    <header></header>
+            
+                    <input type = "checkbox" id="chk">
+                    <label for="chk" class="menu-icon">&#9776;</label>
+                    <div class="bg"></div>
+                    <nav class="menulateral" id="principal">
+                    <p>ACESSO RAPIDO </p>
+                    <ul>
+                        <li><a href = "" class="voltar">Voltar</a></li>
+                        <li><a href = "/interface/">Home</a></li>
+                        <li><a href = "#secretaria" >Secretaria Online<span>+</span></a></li>
+                        <li><a href = "/contato/" >Fale Conosco</a></li>
+                        <li><a href = "#mais">Mais<span>+</span></a></li>
+            
+            
+            
+            
+                    <p>SMARTCLASS </p>
+            
+            
+                    <li><a href = "/smartclass/" >Smartclass</a></li>
+                    </ul>
+                    </nav>
+            
+            
+            
+                    <nav class="menulateral" id="secretaria">
+                    <ul>
+                        <li><a href = "#" class="voltar">Voltar</a></li>
+                        <li><a href="/TabelaNotasFaltas/">Notas e Faltas</a></li>
+                        <li><a href="/cadastro/">Atualização do Cadastro</a></li>
+                        <li><a href="/disciplinasnovo/">Disciplinas</a></li>
+                        <li><a href="/PaginaAluno/">Atividades</a></li>
+            
+                    </ul>
+            
+                    </nav>
+            
+                    <nav class="menulateral" id="mais">
+                    <ul>
+                        <li><a href = "#" class="voltar">Voltar</a></li>
+                        <li><a href="/noticias/">Veja as notícias</a></li>
+                        <li><a href="/">Conheça a instituição</a></li>
+            
+                    </ul>
+            
+                    </nav>
+
+                    <main>
+                            
+                                    {% block main %}
+                            
+                            
+                            
+                            
+                            
+                            
+                                    {%  endblock %}
+                            
+                            
+                              </main>
+                            
+                            
+                            
+                              <footer class="footer">
+                                <p>&copy; 2017. Faculdade Tecnologia Inovação.</p>
+                            </footer>
+                            </body>
+                            </html>

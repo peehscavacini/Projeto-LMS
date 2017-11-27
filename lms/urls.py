@@ -1,4 +1,4 @@
-"""lms URL Configuration
+"""lmsimpacta URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -16,6 +16,28 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+
+from core.views import index, contato, lista_cursos, noticias, cadastro, novadisciplina, login, detalhe_curso, interface, disciplinasnovo, PaginaAluno, smartclass, TabelaNotasFaltas
+
+
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', index ),
+    url(r'^contato/', contato ),
+    url(r'^lista_cursos/', lista_cursos ),
+    url(r'^noticias/', noticias ),
+    url(r'^cadastro/', cadastro ),
+    url(r'^novadisciplina/', novadisciplina ),
+    url(r'^login/', login ),
+     url(r'^detalhe_curso/', detalhe_curso ),
+     url(r'^interface/', interface),
+     url(r'^disciplinasnovo/', disciplinasnovo),
+    url(r'^PaginaAluno/', PaginaAluno),
+    url(r'^smartclass/', smartclass),
+    url(r'^TabelaNotasFaltas/', TabelaNotasFaltas),
+
+
+
 ]

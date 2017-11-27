@@ -1,0 +1,32 @@
+{% extends 'base2.html' %}
+
+	{% block titulo %} Fale Conosco - LMS {% endblock %}
+
+	    {% block main %}
+    <link rel="stylesheet" type="text/css" href="/static/formlogin.css">
+        
+<div class="containercontato">
+<img src="/static/img/iconemenu.png" alt="icone menu">
+<form method="post">
+<div class="form-input">
+<input type="text" placeholder="Nome Completo*" name="Nome">
+</div>
+<div class="form-input">
+<input type="email" placeholder="Email*" name="Email">
+</div>
+<label for="select_assunto"></label><!-- Label vazio? -->
+<select name="assuntos">
+<option value="sem assunto" selected>Selecione um assunto</option> 
+<option value="Secretaria">Secretaria</option>
+<option value="Financeiro">Financeiro</option>
+<option value="Suporte">Suporte</option>
+<option value="Professor">Professor</option>
+</select><br/>
+<textarea>
+    Assunto:
+    </textarea><br/>
+<input type="submit" name="submit" value="Enviar" class="btn-login"><br/>
+</form>
+</div>
+
+        {% endblock %}

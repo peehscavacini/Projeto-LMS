@@ -1,0 +1,49 @@
+{{% extends 'base2.html' %}
+
+	{% block titulo %} Faculdade Inovação Tecnologia - LMS {% endblock %}
+
+	{% block main %}
+
+		<div class="gridpage">
+		
+		<div class="botoes">
+		  <a href="/PaginaAluno/" class="bt1" >Faça suas tarefas atrasadas</a>
+		  <a href="/smartclass/" class="bt2">Veja as novas aulas</a>
+		  <a href="/PaginaAluno/" class="bt3">Envie suas tarefas respondidas</a>
+		  </div>
+		
+	
+
+		<div class="mural">
+		<p class="p">MURAL DE RECADOS:</p>
+		<div class="container-recados">
+				
+					<p>Olá {{ usuario }}</p>
+
+			
+
+				<ul>
+					{%for curso in cursos %}
+						<li>{{ curso.nome }} - {{ curso.tipo }}</li>
+					{% endfor %}
+				
+				
+				
+				</ul>
+		</div>
+		<div class="container-recados2">
+				{% if perfil == "aluno" %}
+				<p>Conteúdo para Alunos</p>
+		
+				{% elif perfil == "professor" %}		
+				<p>Conteúdo para Professores</p>
+				
+				{% else %}
+				<p>Conteúdo para Coordenadores</p>
+				{% endif %}	
+		</div>
+		</div>
+		</div>
+		
+		
+		{%  endblock %}

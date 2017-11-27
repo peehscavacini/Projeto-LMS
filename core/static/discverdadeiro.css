@@ -1,0 +1,147 @@
+.background {
+  background-color: #F2F2F2;
+}
+
+.titulo {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 50px;
+
+}
+.tecweb {
+background: #2E2E2E;
+display: grid;
+padding: 55px;
+font-weight: bold;
+font-size: 20px;
+float: left;
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-family: verdana;
+margin-left: 40px;
+margin-right: 10px;
+width: 200px;
+height: 72px;
+
+}
+
+
+.sql {
+
+  background: #848484;
+  display: grid;
+  padding: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  margin-right: 10px;
+  width: 200px;
+}
+.engenharia {
+
+  background: #2E2E2E;
+  display: grid;
+  padding: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: verdana;
+  margin-right: 10px;
+  width: 200px;
+
+}
+
+.linguagem {
+
+  background: #848484;
+  display: grid;
+  padding: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  margin-right: 10px;
+  width: 200px;
+}
+.libras{
+background: #A4A4A4;
+display: grid;
+padding: 55px;
+font-weight: bold;
+font-size: 20px;
+float: left;
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-family: verdana;
+margin-left: 40px;
+margin-top: 10px;
+margin-right: 10px;
+width: 307px;
+height: 65px;
+text-align: center;
+margin-right: auto;
+}
+.devops{
+background: #1C1C1C;
+display: grid;
+padding: 55px;
+font-weight: bold;
+font-size: 20px;
+float: left;
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-family: verdana;
+margin-left: 10px;
+margin-top: 10px;
+margin-right: 10px;
+width: 307px;
+height: 65px;
+text-align: center;
+margin-right: auto;
+}
+.gestao{
+background: #A4A4A4;
+display: grid;
+padding: 55px;
+font-weight: bold;
+font-size: 20px;
+float: left;
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-family: verdana;
+margin-left: 10px;
+margin-top: 10px;
+margin-right: 10px;
+width: 306px;
+height: 65px;
+text-align: center;
+margin-right: auto;
+}
+
+
+
+@media (max-width: 900px){
+  {
+    max-width: 900px;
+
+  }
+}
