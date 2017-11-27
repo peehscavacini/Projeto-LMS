@@ -1,0 +1,9 @@
+1-  criar a pasta raiz do projeto
+2 - criar a pasta app do django-admin
+3 - criar a pasta core com o python startapp
+4 - Alterar as configurações no settings do projeto
+5 - OBS: neste projeto, estão apenas configurados os cadastros do admin
+6 - após fazer as modificaçoes no databases e incluindo seu 'core' como aplicação
+voce precisa dar um 'makemigrations' para criar as tabelas e 'migrate' para exportar as tabelas.
+7 - feito isso é hora de rodar o script de alteração do banco de dados para aplicar as modificações
+
